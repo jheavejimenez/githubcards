@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
 
-class Cards extends Component {
+class Card extends Component {
     render() {
         return (
             <div className="github-profile">
@@ -16,4 +16,4 @@ class Cards extends Component {
 
 }
 
-export default Cards;
+export default Card;
