@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Cards from "./Cards";
 
 class CardList extends Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class CardList extends Component {
     render() {
         return (
             <div>
-
+                {this.testData.map(profile => <Cards {...profile}/>)}
             </div>
 
         )
