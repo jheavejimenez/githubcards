@@ -5,9 +5,8 @@ class CardList extends Component {
     render() {
         return (
             <div>
-                {this.testData.map((profile, index) => <Card key={index} {...profile}/>)}
+                {this.props.profiles.map((profile) => <Card key={profile.id} {...profile}/>)}
             </div>
-
         )
     }
 }

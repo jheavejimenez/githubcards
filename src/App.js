@@ -21,7 +21,7 @@ class App extends Component {
             <div>
                 <div className="header">{this.props.title}</div>
                 <Form addCard={this.addProfileCardData}/>
-                <CardList/>
+                <CardList profiles={this.state.profileData}/>
             </div>
         );
     }
