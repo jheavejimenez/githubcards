@@ -27,7 +27,7 @@ class CardList extends Component {
     render() {
         return (
             <div>
-                {this.testData.map(profile => <Card {...profile}/>)}
+                {this.testData.map((profile, index) => <Card key={index} {...profile}/>)}
             </div>
 
         )
