@@ -9,7 +9,7 @@ class App extends Component {
             profileData: []
         }
     }
-    addCard = (profile) => {
+    addProfileCardData = (profile) => {
         this.setState(prevState => {
             return {
                 profileData: [...prevState.profileData, profile]
@@ -20,7 +20,7 @@ class App extends Component {
         return (
             <div>
                 <div className="header">{this.props.title}</div>
-                <Form />
+                <Form addCard={this.addProfileCardData}/>
                 <CardList/>
             </div>
         );
