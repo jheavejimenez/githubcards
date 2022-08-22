@@ -11,6 +11,7 @@ class Form extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         const response = await axios.get(`https://api.github.com/users/${this.state.userName}`);
+        this.setState({userName: ""});
         this.props.addCard(response.data);
     }
 
